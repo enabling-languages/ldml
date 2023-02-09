@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE supplementalData SYSTEM "../../common/dtd/ldmlSupplemental.dtd">
+<supplementalData>
+	<version number="$Revision$"/>
+	<transforms>
+		<transform source="Vaii" target="Latn" variant="ALALOC" direction="both" draft="contributed" alias="Vai-Latin/ALALOC und-Latn-t-und-Vaii-m0-alaloc" backwardAlias="Latin-Vai/ALALOC und-Vaii-t-und-latn-m0-alaloc">
+		<!-- The transform described in prose:
+		  This is a conversion from Ethiopic script (Unicode 3.0 level) to Latin script, and the reversal.
+                  The conversion uses the convention (or "variant") established by the American Library Association.
+		-->
+			<tRule><![CDATA[
+########################################################################
+# American Library Association Transliteration for Vai
+#
+#    “Vai.” ALA-LC Romanization Tables, U.S. Library of Congress, 2011, www.loc.gov/catdir/cpso/roman.html. 
+#
+# https://www.loc.gov/catdir/cpso/romanization/vai.pdf
+# https://en.wikipedia.org/wiki/ALA-LC_romanization
+#
+# The ALA-LC Romanization Tables: Transliteration Schemes for Non-Roman Scripts, is approved by the Library of Congress and the American Library Association.
+#
+# Prepared by Andjc for Athinkra
+#
+#
+#
+########################################################################
+
+:: NFD (NFD) ;
+:: Lower (Lower) ;
+
+ꔣ ↔ ɲe ;
+ꕈ ↔ ɲi ;
+ꕰ ↔ ɲa ;
+ꖔ ↔ ɲo ;
+ꖹ ↔ ɲu ;
+ꗠ ↔ ɲɔ ;
+ꘊ ↔ ɲɛ ;
+ꔔ ↔ ɗe ;
+ꔹ ↔ ɗi ;
+ꕠ ↔ ɗa ;
+ꖅ ↔ ɗo ;
+ꖪ ↔ ɗu ;
+ꗑ ↔ ɗɔ ;
+ꗹ ↔ ɗɛ ;
+ꔇ ↔ ɓe ;
+ꔬ ↔ ɓi ;
+ꕒ ↔ ɓa ;
+ꕸ ↔ ɓo ;
+ꖝ ↔ ɓu ;
+ꗃ ↔ ɓɔ ;
+ꗪ ↔ ɓɛ ;
+ꘅ ↔ ŋgɛ̃ ;
+ꔟ ↔ ŋge ;
+ꕄ ↔ ŋgi ;
+ꕬ ↔ ŋga ;
+ꖐ ↔ ŋgo ;
+ꖵ ↔ ŋgu ;
+ꗜ ↔ ŋgɔ ;
+ꘄ ↔ ŋgɛ ;
+ꕋ ↔ ŋã ;
+ꖼ ↔ ŋɔ̃ ;
+ꗣ ↔ ŋɛ̃ ;
+ꘋ ↔ ŋ ;
+ꔘ ↔ ze ;
+ꔽ ↔ zi ;
+ꕤ ↔ za ;
+ꖉ ↔ zo ;
+ꖮ ↔ zu ;
+ꗕ ↔ zɔ ;
+ꗽ ↔ zɛ ;
+ꔝ ↔ ye ;
+ꕂ ↔ yi ;
+ꕩ ↔ ya ;
+ꖎ ↔ yo ;
+ꖳ ↔ yu ;
+ꗚ ↔ yɔ ;
+ꘂ ↔ yɛ ;
+ꔄ ↔ wẽ ;
+ꔩ ↔ wĩ ;
+ꕏ ↔ wã ;
+ꕵ ↔ wõ ;
+ꖚ ↔ wũ ;
+ꗀ ↔ wɔ̃ ;
+ꗧ ↔ wɛ̃ ;
+ꔃ ↔ we ;
+ꔨ ↔ wi ;
+ꕎ ↔ wa ;
+ꕴ ↔ wo ;
+ꖙ ↔ wu ;
+ꖿ ↔ wɔ ;
+ꗦ ↔ wɛ ;
+ꔍ ↔ ve ;
+ꔲ ↔ vi ;
+ꕙ ↔ va ;
+ꕾ ↔ vo ;
+ꖣ ↔ vu ;
+ꗊ ↔ vɔ ;
+ꗲ ↔ vɛ ;
+ꔎ ↔ te ;
+ꔳ ↔ ti ;
+ꕚ ↔ ta ;
+ꕿ ↔ to ;
+ꖤ ↔ tu ;
+ꗋ ↔ tɔ ;
+ꗳ ↔ tɛ ;
+ꔖ ↔ se ;
+ꔻ ↔ si ;
+ꕢ ↔ sa ;
+ꖇ ↔ so ;
+ꖬ ↔ su ;
+ꗓ ↔ sɔ ;
+ꗻ ↔ sɛ ;
+ꔓ ↔ re ;
+ꔸ ↔ ri ;
+ꕟ ↔ ra ;
+ꖄ ↔ ro ;
+ꖩ ↔ ru ;
+ꗐ ↔ rɔ ;
+ꗸ ↔ rɛ ;
+ꔅ ↔ pe ;
+ꔪ ↔ pi ;
+ꕐ ↔ pa ;
+ꕶ ↔ po ;
+ꖛ ↔ pu ;
+ꗁ ↔ pɔ ;
+ꗨ ↔ pɛ ;
+ꔕ ↔ nɗe ;
+ꔺ ↔ nɗi ;
+ꕡ ↔ nɗa ;
+ꖆ ↔ nɗo ;
+ꖫ ↔ nɗu ;
+ꗒ ↔ nɗɔ ;
+ꗺ ↔ nɗɛ ;
+ꔜ ↔ nje ;
+ꕁ ↔ nji ;
+ꕨ ↔ nja ;
+ꖍ ↔ njo ;
+ꖲ ↔ nju ;
+ꗙ ↔ njɔ ;
+ꘁ ↔ njɛ ;
+ꔢ ↔ ne ;
+ꕇ ↔ ni ;
+ꕯ ↔ na ;
+ꖓ ↔ no ;
+ꖸ ↔ nu ;
+ꗟ ↔ nɔ ;
+ꘉ ↔ nɛ ;
+ꔈ ↔ mɓe ;
+ꔭ ↔ mɓi ;
+ꕓ ↔ mɓa ;
+ꕹ ↔ mɓo ;
+ꖞ ↔ mɓu ;
+ꗄ ↔ mɓɔ ;
+ꗫ ↔ mɓɛ ;
+ꔊ ↔ mgbe ;
+ꔯ ↔ mgbi ;
+ꕖ ↔ mgba ;
+ꕻ ↔ mgbo ;
+ꖠ ↔ mgbu ;
+ꗆ ↔ mgbɔ ;
+ꗮ ↔ mgbɛ ;
+ꔡ ↔ me ;
+ꕆ ↔ mi ;
+ꕮ ↔ ma ;
+ꖒ ↔ mo ;
+ꖷ ↔ mu ;
+ꗞ ↔ mɔ ;
+ꘈ ↔ mɛ ;
+ꔒ ↔ le ;
+ꔷ ↔ li ;
+ꕞ ↔ la ;
+ꖃ ↔ lo ;
+ꖨ ↔ lu ;
+ꗏ ↔ lɔ ;
+ꗷ ↔ lɛ ;
+ꕕ ↔ kpã ;
+ꗭ ↔ kpɛ̃ ;
+ꔉ ↔ kpe ;
+ꔮ ↔ kpi ;
+ꕔ ↔ kpa ;
+ꕺ ↔ kpo ;
+ꖟ ↔ kpu ;
+ꗅ ↔ kpɔ ;
+ꗬ ↔ kpɛ ;
+ꕫ ↔ kã ;
+ꔞ ↔ ke ;
+ꕃ ↔ ki ;
+ꕪ ↔ ka ;
+ꖏ ↔ ko ;
+ꖴ ↔ ku ;
+ꗛ ↔ kɔ ;
+ꘃ ↔ kɛ ;
+ꔛ ↔ je ;
+ꕀ ↔ ji ;
+ꕧ ↔ ja ;
+ꖌ ↔ jo ;
+ꖱ ↔ ju ;
+ꗘ ↔ jɔ ;
+ꘀ ↔ jɛ ;
+ꔧ ↔ hĩ ;
+ꕍ ↔ hã ;
+ꖘ ↔ hũ ;
+ꖾ ↔ hɔ̃ ;
+ꗥ ↔ hɛ̃ ;
+ꔂ ↔ he ;
+ꔦ ↔ hi ;
+ꕌ ↔ ha ;
+ꕳ ↔ ho ;
+ꖗ ↔ hu ;
+ꖽ ↔ hɔ ;
+ꗤ ↔ hɛ ;
+ꗈ ↔ gbɔ̃ ;
+ꗰ ↔ gbɛ̃ ;
+ꔋ ↔ gbe ;
+ꔰ ↔ gbi ;
+ꕗ ↔ gba ;
+ꕼ ↔ gbo ;
+ꖡ ↔ gbu ;
+ꗇ ↔ gbɔ ;
+ꗯ ↔ gbɛ ;
+ꘇ ↔ gɛ̃ ;
+ꔠ ↔ ge ;
+ꕅ ↔ gi ;
+ꕭ ↔ ga ;
+ꖑ ↔ go ;
+ꖶ ↔ gu ;
+ꗝ ↔ gɔ ;
+ꘆ ↔ gɛ ;
+ꔌ ↔ fe ;
+ꔱ ↔ fi ;
+ꕘ ↔ fa ;
+ꕽ ↔ fo ;
+ꖢ ↔ fu ;
+ꗉ ↔ fɔ ;
+ꗱ ↔ fɛ ;
+ꔐ ↔ de ;
+ꔵ ↔ di ;
+ꕜ ↔ da ;
+ꖁ ↔ do ;
+ꖦ ↔ du ;
+ꗍ ↔ dɔ ;
+ꗵ ↔ dɛ ;
+ꔚ ↔ che ;
+ꔿ ↔ chi ;
+ꕦ ↔ cha ;
+ꖋ ↔ cho ;
+ꖰ ↔ chu ;
+ꗗ ↔ chɔ ;
+ꗿ ↔ chɛ ;
+ꔆ ↔ be ;
+ꔫ ↔ bi ;
+ꕑ ↔ ba ;
+ꕷ ↔ bo ;
+ꖜ ↔ bu ;
+ꗂ ↔ bɔ ;
+ꗩ ↔ bɛ ;
+ꔁ ↔ ẽ ;
+ꔥ ↔ ĩ ;
+ꕊ ↔ ã ;
+ꕲ ↔ õ ;
+ꖖ ↔ ũ ;
+ꖻ ↔ ɔ̃ ;
+ꗢ ↔ ɛ̃ ;
+ꔀ ↔ e ;
+ꔤ ↔ i ;
+ꕉ ↔ a ;
+ꕱ ↔ o ;
+ꖕ ↔ u ;
+ꖺ ↔ ɔ ;
+ꗡ ↔ ɛ ;
+
+# Punctuation
+
+꘍ → \u002C ;
+꘎ → \u002E ;
+꘏ → \u003F ;
+
+# Digits
+
+꘠ → 0 ;
+꘡ → 1 ;
+꘢ → 2 ;
+꘣ → 3 ;
+꘤ → 4 ;
+꘥ → 5 ;
+꘦ → 6 ;
+꘧ → 7 ;
+꘨ → 8 ;
+꘩ → 9 ;
+
+# SYLLABLE LENGTHENER
+
+::Null;
+# ::NFD;
+# ::Lower;
+([aeiouɛɔ]\u0303) ꘌ → $1 $1 ;
+([aeiouɛɔ])ꘌ → $1 $1 ;
+
+:: Lower (Lower) ;
+::NFD ;
+
+
+
+
+			]]></tRule>
+		</transform>
+	</transforms>
+</supplementalData>
